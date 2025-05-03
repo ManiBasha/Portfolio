@@ -1,15 +1,10 @@
-# Netlify Configuration File for Gatsby Project
-
 [build]
-  publish = "public"       # Directory to publish after build (for Gatsby, it's typically "public")
-  command = "gatsby build" # Command to run for building the project
-
-[context.production.environment]
-  NODE_ENV = "production"  # Set environment to production for Netlify deployment
-  GO_VERSION = "1.19"      # Specify Go version 1.19 for the build
+  # Custom build command to install Go and then build Gatsby
+  command = "bash install_go.sh && gatsby build"
+  publish = "public"  # The output directory for Gatsby build
 
 [[plugins]]
-  package = "@netlify/plugin-gatsby"  # Using the Netlify Gatsby plugin to improve build time and compatibility
+  package = "@netlify/plugin-gatsby"
 
 [[redirects]]
   from = "/admin/*"
