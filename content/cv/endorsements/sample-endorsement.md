@@ -1,0 +1,1 @@
+// Placeholder content for content/cv/endorsements/sample-endorsement.md

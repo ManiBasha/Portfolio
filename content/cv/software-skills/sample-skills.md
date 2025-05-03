@@ -1,0 +1,1 @@
+// Placeholder content for content/cv/software-skills/sample-skills.md

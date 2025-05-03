@@ -1,0 +1,1 @@
+// Placeholder content for content/cv/education/sample-education.md

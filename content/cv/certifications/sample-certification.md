@@ -1,0 +1,1 @@
+// Placeholder content for content/cv/certifications/sample-certification.md
