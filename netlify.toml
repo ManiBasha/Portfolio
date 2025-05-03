@@ -6,6 +6,7 @@
 
 [context.production.environment]
   NODE_ENV = "production"  # Set environment to production for Netlify deployment
+  GO_VERSION = "1.19"      # Specify Go version 1.19 for the build
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"  # Using the Netlify Gatsby plugin to improve build time and compatibility
