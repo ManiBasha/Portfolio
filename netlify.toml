@@ -1,1 +1,17 @@
-// Placeholder content for netlify.toml
+# Netlify Configuration File for Gatsby Project
+
+[build]
+  publish = "public"       # Directory to publish after build (for Gatsby, it's typically "public")
+  command = "gatsby build" # Command to run for building the project
+
+[context.production.environment]
+  NODE_ENV = "production"  # Set environment to production for Netlify deployment
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"  # Using the Netlify Gatsby plugin to improve build time and compatibility
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+  force = true
